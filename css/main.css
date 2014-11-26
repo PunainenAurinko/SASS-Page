@@ -25,3 +25,7 @@ h2, h3, h4, .foot p {
     font-family: english, serif;
     color: #9051bf;
 }
+
+svg {
+    fill: #301b40;
+}
