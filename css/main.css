@@ -485,11 +485,11 @@ Mixins & Extensions
   transition: all 0.2s ease-in-out; }
 
 .focal:hover .iconic {
-  -webkit-transform: rotate(720deg) scale(1.5) translateY(200px);
+  -webkit-transform: rotate(720deg) scale(1) translateY(220px);
   -moz-transform: rotate(720deg) scale(0) translateY(200px);
   -o-transform: rotate(720deg) scale(0) translateY(200px);
   -ms-transform: rotate(720deg) scale(0) translateY(200px);
-  transform: rotate(720deg) scale(1.5) translateY(200px);
+  transform: rotate(720deg) scale(1) translateY(220px);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 100;
@@ -528,12 +528,12 @@ focal:hover h3 {
   transition-delay: 0.7s; }
 
 .focal:hover p {
-  -webkit-transform: translateY(0px);
+  -webkit-transform: translateY(-200px);
   -moz-transform: translateY(-200px);
   -o-transform: translateY(-200px);
   -ms-transform: translateY(-200px);
-  transform: translateY(0px);
-  opacity: 30;
+  transform: translateY(-200px);
+  opacity: 1;
   -webkit-transition-delay: 0.6s;
   -moz-transition-delay: 0.6s;
   -o-transition-delay: 0.6s;
@@ -553,6 +553,22 @@ focal:hover h3 {
   transition-delay: 0.5s; }
 
 @media only screen and (min-width: 960px) {
+  .focal:hover .iconic {
+    -webkit-transform: rotate(720deg) scale(1.5) translateY(200px);
+    -moz-transform: rotate(720deg) scale(0) translateY(200px);
+    -o-transform: rotate(720deg) scale(0) translateY(200px);
+    -ms-transform: rotate(720deg) scale(0) translateY(200px);
+    transform: rotate(720deg) scale(1.5) translateY(200px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 100;
+    /* -webkit-transform: translateY(230px);
+    -moz-transform: translateY(230px);
+    -o-transform: translateY(230px);
+    -ms-transform: translateY(230px);
+    transform: translateY(230px);
+     opacity: 100;*/ }
+
   .focal:hover p {
     -webkit-transform: translateY(-270px);
     -moz-transform: translateY(-270px);
