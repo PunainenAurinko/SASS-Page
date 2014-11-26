@@ -16,4 +16,12 @@ Eg:
 - buttons.scss
 *********************/
 
+html {
+    font-family: pt-mono, monospace;
+    color: #603680;
+}
 
+h2, h3, h4, .foot p {
+    font-family: english, serif;
+    color: #9051bf;
+}
