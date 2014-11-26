@@ -391,10 +391,7 @@ Mixins & Extensions
     margin-left: 3%;
     margin: 0 auto; }
     .col-3:first-child {
-      margin-left: 0; }
-
-  .col-3:first-child {
-    margin-left: 25px; }
+      margin-left: 25px; }
 
   .col-4 {
     min-height: 100px;
@@ -403,10 +400,22 @@ Mixins & Extensions
     margin-left: 2%;
     margin: 0 auto; }
     .col-4:first-child {
-      margin-left: 0; }
+      margin-left: 25px; } }
+.btn {
+  font-family: english, serif;
+  text-decoration: none;
+  color: #c06cff;
+  background: #603680;
+  padding: 5px;
+  margin: 20px 50px;
+  border: 1px solid #ad61e6;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px #301b40; }
 
-  .col-4:first-child {
-    margin-left: 25px; } }
+.btn:hover {
+  color: #301b40;
+  background: #c06cff; }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -425,8 +434,8 @@ body {
   height: 100px; }
 
 body {
-  background: rgba(191, 107, 255, 0.14);
-  margin-top: 180px; }
+  background: rgba(191, 107, 255, 0.09);
+  margin-top: 230px; }
 
 .masthead, .foot {
   background: #301b40;

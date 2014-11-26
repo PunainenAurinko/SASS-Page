@@ -1,0 +1,20 @@
+.box {
+    
+}
+
+.btn {
+    font-family: $font-secondary;
+    text-decoration: none;
+    color: #c06cff;
+    background: #603680;
+    padding: 5px;
+    margin: 20px 50px;
+    border: 1px solid #ad61e6;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px #301b40;
+}
+
+.btn:hover {
+    color: #301b40;
+    background: #c06cff;
+}

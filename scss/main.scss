@@ -18,12 +18,15 @@ Stylesheet: Main Stylesheet
 //import grid
 @import "grid";
 
+//import buttons
+@import "buttons";
+
 //import sticky-footer
 @import "sticky-footer";
 
 body {
-    background: hsla(274, 100%, 71%, 0.14);
-    margin-top: 180px;
+    background: hsla(274, 100%, 71%, 0.09);
+    margin-top: 230px;
 }
 
 .masthead, .foot {

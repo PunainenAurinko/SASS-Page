@@ -29,10 +29,10 @@ Mixins & Extensions
 // ($numbr_of_columns -1)
 
 // Remaining Number of Columns * Margin Spacing
-// $margin * ($numbr_of_columns -1)
+// $margin * ($number_of_columns -1)
 
 // Container Width - Total Margin Spacing
-// $container_width - ($margin * ($numbr_of_columns -1))
+// $container_width - ($margin * ($number_of_columns -1))
 // 960px - 20px = 940px
 
 // Remaining Width / Total Number of Columns
@@ -43,6 +43,6 @@ Mixins & Extensions
     margin-left: $margin;
 
 &:first-child {
-    margin-left: 0;
+    margin-left: 25px;
     }
 }
