@@ -402,6 +402,23 @@ Mixins & Extensions
     margin: 0 auto; }
     .col-4:first-child {
       margin-left: 25px; } }
+.iconic {
+  fill: #301b40;
+  stroke: #301b40;
+  width: 100%; }
+
+.iconic:hover {
+  fill: #9051bf;
+  stroke: #9051bf; }
+
+.accent .iconic-property-accent {
+  fill: #9051bf;
+  stroke: #9051bf; }
+
+.accent:hover .iconic-property-accent {
+  fill: #301b40;
+  stroke: #301b40; }
+
 .btn {
   font-family: english, serif;
   text-decoration: none;
@@ -469,22 +486,5 @@ h3 {
 
 h4 {
   font-size: 1.4em; }
-
-.iconic {
-  fill: #301b40;
-  stroke: #301b40;
-  width: 100%; }
-
-.iconic:hover {
-  fill: #9051bf;
-  stroke: #9051bf; }
-
-.accent .iconic-property-accent {
-  fill: #9051bf;
-  stroke: #9051bf; }
-
-.accent:hover .iconic-property-accent {
-  fill: #301b40;
-  stroke: #301b40; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+.iconic {
+    fill: $color-dark-b;
+    stroke: $color-dark-b;
+    width: 100%;
+}
+
+.iconic:hover {
+    fill: $color-medium-b;
+    stroke: $color-medium-b;
+}
+
+.accent .iconic-property-accent {
+  fill: $color-medium-b;
+  stroke: $color-medium-b;
+}
+
+.accent:hover .iconic-property-accent {
+  fill: $color-dark-b;
+  stroke: $color-dark-b;
+}

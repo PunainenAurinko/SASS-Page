@@ -18,6 +18,9 @@ Stylesheet: Main Stylesheet
 //import grid
 @import "grid";
 
+//import iconic
+@import "iconic";
+
 //import buttons
 @import "buttons";
 
@@ -68,23 +71,3 @@ h4 {
     font-size: $base-font-size*1.4;
 }
 
-.iconic {
-    fill: $color-dark-b;
-    stroke: $color-dark-b;
-    width: 100%;
-}
-
-.iconic:hover {
-    fill: $color-medium-b;
-    stroke: $color-medium-b;
-}
-
-.accent .iconic-property-accent {
-  fill: $color-medium-b;
-  stroke: $color-medium-b;
-}
-
-.accent:hover .iconic-property-accent {
-  fill: $color-dark-b;
-  stroke: $color-dark-b;
-}
