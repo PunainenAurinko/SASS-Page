@@ -25,12 +25,12 @@ Stylesheet: Main Stylesheet
 @import "sticky-footer";
 
 body {
-    background: hsla(274, 100%, 71%, 0.09);
+    background: hsla(274, 100%, 71%, 0.07);
     margin-top: 230px;
 }
 
 .masthead, .foot {
-    background: #301b40;
+    background: $color-dark-b;
     text-align: center;
 }
 
@@ -44,14 +44,15 @@ body {
 
 html {
     font: 400 $base-font-size*1.4/$base-line-height $font-primary;
-    color: $base-text-color;
+    color: $color-dark-a;
+    //text-align: center;
 }
 
 h2, h3, h4, .foot p {
     font-family: $font-secondary;
     font-weight: 700;
     line-height: $base-line-height;
-    color: $base-hdr-color;
+    color: $color-medium-b;
     text-align: center;
 }
 
@@ -64,14 +65,26 @@ h3 {
 }
 
 h4 {
-    font-size: $base-font-size*1.8;
+    font-size: $base-font-size*1.4;
 }
 
-svg {
-    fill: #301b40;
+.iconic {
+    fill: $color-dark-b;
+    stroke: $color-dark-b;
     width: 100%;
 }
 
-.foot {
+.iconic:hover {
+    fill: $color-medium-b;
+    stroke: $color-medium-b;
+}
 
+.accent .iconic-property-accent {
+  fill: $color-medium-b;
+  stroke: $color-medium-b;
+}
+
+.accent:hover .iconic-property-accent {
+  fill: $color-dark-b;
+  stroke: $color-dark-b;
 }

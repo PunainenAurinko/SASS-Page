@@ -14,7 +14,7 @@
     //background: #c06cff;
     min-height: 100px;
     float: left;
-    // equalSpaced( $num_of_cols, $spacing, $width  )
+    // equalSpaced( $num_of_cols, $margin, $con_width  )
     @include equalSpaced(3, 3%, 100%);
     margin: 0 auto;
     }
@@ -24,7 +24,7 @@
     //background: #c06cff;
     min-height: 100px;
     float: left;
-    // equalSpaced( $num_of_cols, $spacing, $width  )
+    // equalSpaced( $num_of_cols, $margin, $con_width  )
     @include equalSpaced(4, 2%, 100%);
     margin: 0 auto;
     }

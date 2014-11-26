@@ -379,6 +379,7 @@ Mixins & Extensions
 -------------------------------------------------------------------------------------------------------------------- */
 /* Breakpoints */
 /* Fonts */
+/* Colors */
 .row {
   max-width: 800px;
   margin: 5% auto; }
@@ -428,13 +429,14 @@ body {
 
 .foot {
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 100px; }
 
 body {
-  background: rgba(191, 107, 255, 0.09);
+  background: rgba(191, 107, 255, 0.07);
   margin-top: 230px; }
 
 .masthead, .foot {
@@ -466,10 +468,23 @@ h3 {
   font-size: 2em; }
 
 h4 {
-  font-size: 1.8em; }
+  font-size: 1.4em; }
 
-svg {
+.iconic {
   fill: #301b40;
+  stroke: #301b40;
   width: 100%; }
+
+.iconic:hover {
+  fill: #9051bf;
+  stroke: #9051bf; }
+
+.accent .iconic-property-accent {
+  fill: #9051bf;
+  stroke: #9051bf; }
+
+.accent:hover .iconic-property-accent {
+  fill: #301b40;
+  stroke: #301b40; }
 
 /*# sourceMappingURL=main.css.map */

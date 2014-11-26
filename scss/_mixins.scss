@@ -38,8 +38,8 @@ Mixins & Extensions
 // Remaining Width / Total Number of Columns
 // ($container_width - ($margin * ($numbr_of_columns -1))) / number_of_columns
 
-@mixin equalSpaced( $number_of_columns, $margin, $container_width){
-    width: ( $container_width - ( $margin * ( $number_of_columns - 1 ) ) ) / $number_of_columns;
+@mixin equalSpaced( $num_of_cols, $margin, $con_width){
+    width: ( $con_width - ( $margin * ( $num_of_cols - 1 ) ) ) / $num_of_cols;
     margin-left: $margin;
 
 &:first-child {
