@@ -1,0 +1,74 @@
+/******************************************************************
+Site Name: JSTotal
+Author: Vladimir Tonkonogov
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+
+// import normalize
+@import "normalize";
+
+// import mixins
+@import "mixins";
+
+//import variables
+@import "variables";
+
+//import grid
+@import "grid";
+
+//import sticky-footer
+@import "sticky-footer";
+
+body {
+    background: hsla(274, 100%, 71%, 0.14);
+    margin-top: 180px;
+}
+
+.masthead, .foot {
+    background: #301b40;
+    text-align: center;
+}
+
+.masthead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  /* Set the fixed height of the footer here */
+    height: 180px;
+}
+
+html {
+    font: 400 $base-font-size*1.4/$base-line-height $font-primary;
+    color: $base-text-color;
+}
+
+h2, h3, h4, .foot p {
+    font-family: $font-secondary;
+    font-weight: 700;
+    line-height: $base-line-height;
+    color: $base-hdr-color;
+    text-align: center;
+}
+
+h2 {
+    font-size: $base-font-size*2.3;
+}
+
+h3 {
+    font-size: $base-font-size*2;
+}
+
+h4 {
+    font-size: $base-font-size*1.8;
+}
+
+svg {
+    fill: #301b40;
+    width: 100%;
+}
+
+.foot {
+
+}

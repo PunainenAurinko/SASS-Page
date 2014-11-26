@@ -1,0 +1,31 @@
+/*********************
+Use SASS to write your CSS
+SASS files are:
+
+main.scss
+which will import:
+
+normalize.scss
+variables.scss
+mixins.scss
+sticky-footer.scss
+
+You may divide your sass into addition files as you wish.
+Eg: 
+- grid.scss
+- buttons.scss
+*********************/
+
+html {
+    font-family: inconsolata, monospace;
+    color: #603680;
+}
+
+h2, h3, h4, .foot p {
+    font-family: english, serif;
+    color: #9051bf;
+}
+
+svg {
+    fill: #301b40;
+}

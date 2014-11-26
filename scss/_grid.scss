@@ -1,0 +1,39 @@
+
+
+.row {
+    max-width: 800px;
+    //background: #301b40;
+    margin: 5% auto;
+    @extend .clearfix;
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+
+    // Col 3 Layout
+.col-3 {
+    //background: #c06cff;
+    min-height: 100px;
+    float: left;
+    // equalSpaced( $num_of_cols, $spacing, $width  )
+    @include equalSpaced(3, 3%, 100%);
+    margin: 0 auto;
+    }
+    
+.col-3:first-child {
+    margin-left: 25px;
+}
+
+    // Col 4 Layout
+.col-4 {
+    //background: #c06cff;
+    min-height: 100px;
+    float: left;
+    // equalSpaced( $num_of_cols, $spacing, $width  )
+    @include equalSpaced(4, 2%, 100%);
+    margin: 0 auto;
+    }
+
+.col-4:first-child {
+    margin-left: 25px;
+}
+}

@@ -1,0 +1,48 @@
+/******************************************************************
+
+Mixins & Extensions
+
+******************************************************************/
+
+// ----------------- //
+//  clearfix
+//  @extend .clearfix;
+// ----------------- //
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//$container_width: 960px;
+//$number_of_columns: 2;
+//$margin: 20px;
+
+// Equal Spaced Columns
+// --------------------------------------------
+// Number of Columns - First Column
+// ($numbr_of_columns -1)
+
+// Remaining Number of Columns * Margin Spacing
+// $margin * ($numbr_of_columns -1)
+
+// Container Width - Total Margin Spacing
+// $container_width - ($margin * ($numbr_of_columns -1))
+// 960px - 20px = 940px
+
+// Remaining Width / Total Number of Columns
+// ($container_width - ($margin * ($numbr_of_columns -1))) / number_of_columns
+
+@mixin equalSpaced( $number_of_columns, $margin, $container_width){
+    width: ( $container_width - ( $margin * ( $number_of_columns - 1 ) ) ) / $number_of_columns;
+    margin-left: $margin;
+
+&:first-child {
+    margin-left: 0;
+    }
+}
