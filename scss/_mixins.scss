@@ -9,30 +9,30 @@ Mixins & Extensions
 //  @extend .clearfix;
 // ----------------- //
 .clearfix {
-  *zoom: 1;
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
   &:after {
-    clear: both;
-  }
+        clear: both;
+    }
 }
 
-//$container_width: 960px;
-//$number_of_columns: 2;
+//$con_width: 960px;
+//$num_of_cols: 2;
 //$margin: 20px;
 
 // Equal Spaced Columns
 // --------------------------------------------
 // Number of Columns - First Column
-// ($numbr_of_columns -1)
+// ($num_of_cols -1)
 
 // Remaining Number of Columns * Margin Spacing
-// $margin * ($number_of_columns -1)
+// $margin * ($num_of_cols -1)
 
 // Container Width - Total Margin Spacing
-// $container_width - ($margin * ($number_of_columns -1))
+// $con_width - ($margin * ($num_of_cols -1))
 // 960px - 20px = 940px
 
 // Remaining Width / Total Number of Columns
