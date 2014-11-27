@@ -472,11 +472,11 @@ Mixins & Extensions
   transition: all 0.2s ease-in-out; }
 
 .focal:hover .iconic {
-  -webkit-transform: rotate(720deg) scale(1) translateY(220px);
-  -moz-transform: rotate(720deg) scale(1) translateY(200px);
-  -o-transform: rotate(720deg) scale(1) translateY(200px);
-  -ms-transform: rotate(720deg) scale(1) translateY(200px);
-  transform: rotate(720deg) scale(1) translateY(220px);
+  -webkit-transform: rotate(720deg) scale(1) translateY(230px);
+  -moz-transform: rotate(720deg) scale(1) translateY(230px);
+  -o-transform: rotate(720deg) scale(1) translateY(230px);
+  -ms-transform: rotate(720deg) scale(1) translateY(230px);
+  transform: rotate(720deg) scale(1) translateY(230px);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 1;
@@ -558,17 +558,48 @@ focal:hover h3 {
   font-family: english, serif;
   text-decoration: none;
   color: #c06cff;
-  background: #603680;
-  padding: 5px;
-  margin: 20px 50px;
-  border: 1px solid #ad61e6;
-  border-radius: 7px;
+  background-image: linear-gradient(to bottom, #9051bf, #301b40);
+  padding: 7px;
+  margin: 20px 30px;
+  border: 1px solid #603680;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px #301b40; }
 
 .btn:hover {
   color: #301b40;
-  background: #c06cff; }
+  background-image: linear-gradient(to bottom, #c06cff, #9051bf); }
 
+/*.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, $color-medium-b, $color-dark-b);
+  background-image: -moz-linear-gradient(top, $color-medium-b, $color-dark-b);
+  background-image: -ms-linear-gradient(top, $color-medium-b, $color-dark-b);
+  background-image: -o-linear-gradient(top, $color-medium-b, $color-dark-b);
+  background-image: linear-gradient(to bottom, $color-medium-b, $color-dark-b);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 3px $color-dark-b;
+  -moz-box-shadow: 3px 3px 3px $color-dark-b;
+  box-shadow: 3px 3px 3px $color-dark-b;
+  font-family: $font-secondary;
+  color: $color-light;
+  font-size: $base-font-size*1.1;
+  padding: 5px;
+    margin: 20px 30px;
+  text-decoration: none;
+    width: 50%;
+}
+
+.btn:hover {
+  background: $color-medium-a;
+  background-image: -webkit-linear-gradient(top, $color-light, $color-medium-b);
+  background-image: -moz-linear-gradient(top, $color-light, $color-medium-b);
+  background-image: -ms-linear-gradient(top, $color-light, $color-medium-b);
+  background-image: -o-linear-gradient(top, $color-light, $color-medium-b);
+  background-image: linear-gradient(to bottom, $color-light, $color-medium-b);
+  text-decoration: none;
+}*/
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
