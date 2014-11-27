@@ -1,13 +1,37 @@
+@media only screen and (min-width: $breakpoint-large) {
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.col-4 {
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.col-foot {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    }
+}
+
 .btn {
+    display: block;
+    margin: 0 auto;
     font-family: $font-secondary;
     text-decoration: none;
     color: $color-light;
     background-image: linear-gradient(to bottom, $color-medium-b, $color-dark-b);
     padding: 7px;
-    margin: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid  $color-dark-a;
     border-radius: 20px;
     box-shadow: 2px 2px 2px $color-dark-b;
+    
 }
 
 .btn:hover {

@@ -16,3 +16,7 @@ body {
     /* Set the fixed height of the footer here */
     height: 100px;
 }
+
+@media only screen and (min-width: $breakpoint-large) {
+    .foot { max-width: 1080px; }
+}

@@ -1,6 +1,5 @@
 .row {
-    max-width: 800px;
-    //background: #301b40;
+    max-width: 960px;
     margin: 5% auto;
     @extend .clearfix;
 }
@@ -9,17 +8,15 @@
 
     // Col 3 Layout
 .col-3 {
-    //background: #c06cff;
-    min-height: 100px;
+    height: 415px;
     float: left;
     // equalSpaced( $num_of_cols, $margin, $con_width  )
-    @include equalSpaced(3, 3%, 100%);
+    @include equalSpaced(3, 2%, 100%);
     margin: 0 auto;
     }
     
     // Col 4 Layout
 .col-4 {
-    //background: #c06cff;
     min-height: 100px;
     float: left;
     // equalSpaced( $num_of_cols, $margin, $con_width  )
@@ -29,5 +26,12 @@
 
 p {
     text-align: left;
+    margin-left: 3px;
+    padding: 5px;
     }
+  
+h4 {
+    width: 70%;
+    margin: 0 auto;
+}
 }
