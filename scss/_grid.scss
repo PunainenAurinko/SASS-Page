@@ -4,6 +4,10 @@
     @extend .clearfix;
 }
 
+.focal .box {
+    height: 370px;
+}
+
 @media only screen and (min-width: $breakpoint-large) {
 
     // Col 3 Layout
@@ -24,6 +28,10 @@
     margin: 0 auto;
     }
 
+.focal .box {
+    height: 400px;
+}
+    
 p {
     text-align: left;
     margin-left: 3px;
