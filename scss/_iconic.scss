@@ -1,20 +1,23 @@
+/********************************************
+                ICON STYLES
+********************************************/
+
 .iconic {
     fill: $color-dark-b;
     stroke: $color-dark-b;
-    width: 100%;
 }
 
 .iconic:hover {
-    fill: $color-medium-b;
-    stroke: $color-medium-b;
+    fill: $color-medium-a;
+    stroke: $color-medium-a;
 }
 
 .accent .iconic-property-accent {
-  fill: $color-medium-b;
-  stroke: $color-medium-b;
+    fill: hsla(0, 0%, 100%, 0.60);
+    stroke: hsla(0, 0%, 100%, 0.60);
 }
 
 .accent:hover .iconic-property-accent {
-  fill: $color-dark-b;
-  stroke: $color-dark-b;
+    fill: $color-medium-a;
+    stroke: $color-medium-a;
 }

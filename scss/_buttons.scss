@@ -1,7 +1,12 @@
+/********************************************
+                BUTTON STYLES
+********************************************/
+
 @media only screen and (min-width: $breakpoint-large) {
 
 .wrapper {
     max-width: 1080px;
+    background: $color-medium-b;
     margin: 0 auto;
 }
 
@@ -9,6 +14,7 @@
     position: relative;
     height: 300px;
     margin-top: 20px;
+    margin-top: -20px;
 }
 
 .col-foot {
@@ -23,14 +29,14 @@
     margin: 0 auto;
     font-family: $font-secondary;
     text-decoration: none;
-    color: $color-light;
-    text-shadow: 0px 0px 1px hsl(274, 41%, 18%);
-    background-image: linear-gradient(to bottom, $color-medium-b, $color-dark-b);
+    color: $color-light-a;
+    text-shadow: 1px $color-light-a;
+    background: $color-dark-b;
     padding: 7px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px $color-dark-b;
+    box-shadow: 0px 0px 10px 2px $color-dark-a;
     outline: none;
     border-style: none;
 }
@@ -38,38 +44,7 @@
 .btn:hover {
     transition-duration: 0.5s;
     color: $color-dark-b;
-    text-shadow: 1px 1px 1px hsl(274, 100%, 71%);
-    background-image: linear-gradient(to bottom, $color-light, $color-medium-b);
+    text-shadow: 0px 0px 0.1px $color-dark-b;
+    background: hsla(0, 0%, 100%, 0.60);
+    box-shadow: 0px 0px 10px 5px $color-medium-a;
 }
-
-/*.btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -moz-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -ms-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -o-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: linear-gradient(to bottom, $color-medium-b, $color-dark-b);
-  -webkit-border-radius: 20;
-  -moz-border-radius: 20;
-  border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 3px $color-dark-b;
-  -moz-box-shadow: 3px 3px 3px $color-dark-b;
-  box-shadow: 3px 3px 3px $color-dark-b;
-  font-family: $font-secondary;
-  color: $color-light;
-  font-size: $base-font-size*1.1;
-  padding: 5px;
-    margin: 20px 30px;
-  text-decoration: none;
-    width: 50%;
-}
-
-.btn:hover {
-  background: $color-medium-a;
-  background-image: -webkit-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -moz-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -ms-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -o-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: linear-gradient(to bottom, $color-light, $color-medium-b);
-  text-decoration: none;
-}*/

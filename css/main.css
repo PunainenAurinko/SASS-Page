@@ -362,16 +362,15 @@ td,
 th {
   padding: 0; }
 
-/* = Variables 
--------------------------------------------------------------------------------------------------------------------- */
+/********************************************
+                VARIABLES
+********************************************/
 /* Breakpoints */
 /* Fonts */
 /* Colors */
-/******************************************************************
-
-Mixins & Extensions
-
-******************************************************************/
+/********************************************
+            MIXINS & EXTENSIONS
+********************************************/
 .clearfix, .row {
   *zoom: 1; }
   .clearfix:before, .row:before, .clearfix:after, .row:after {
@@ -380,6 +379,9 @@ Mixins & Extensions
   .clearfix:after, .row:after {
     clear: both; }
 
+/********************************************
+                GRID LAYOUT
+********************************************/
 .row {
   max-width: 960px;
   margin: 5% auto; }
@@ -389,7 +391,7 @@ Mixins & Extensions
 
 @media only screen and (min-width: 960px) {
   .col-3 {
-    height: 415px;
+    height: 370px;
     float: left;
     width: 32%;
     margin-left: 2%;
@@ -407,39 +409,44 @@ Mixins & Extensions
       margin-left: 25px; }
 
   .focal .box {
-    height: 415px; }
+    height: 370px; }
 
   p {
     text-align: left;
-    margin-left: 3px;
+    margin-left: 15px;
     padding: 5px; }
 
   h4 {
     width: 70%;
     margin: 0 auto; } }
+/********************************************
+                ICON STYLES
+********************************************/
 .iconic {
-  fill: #301b40;
-  stroke: #301b40;
-  width: 100%; }
-
-.iconic:hover {
-  fill: #9051bf;
-  stroke: #9051bf; }
-
-.accent .iconic-property-accent {
-  fill: #9051bf;
-  stroke: #9051bf; }
-
-.accent:hover .iconic-property-accent {
   fill: #301b40;
   stroke: #301b40; }
 
+.iconic:hover {
+  fill: #ad61e6;
+  stroke: #ad61e6; }
+
+.accent .iconic-property-accent {
+  fill: rgba(255, 255, 255, 0.6);
+  stroke: rgba(255, 255, 255, 0.6); }
+
+.accent:hover .iconic-property-accent {
+  fill: #ad61e6;
+  stroke: #ad61e6; }
+
+/********************************************
+              ANIMATION STYLES
+********************************************/
 .focal .iconic {
-  -webkit-transform: rotate(180deg) scale(1);
-  -moz-transform: rotate(180deg) scale(1);
-  -o-transform: rotate(180deg) scale(1);
-  -ms-transform: rotate(180deg) scale(1);
-  transform: rotate(180deg) scale(1);
+  -webkit-transform: rotate(360deg) scale(1);
+  -moz-transform: rotate(360deg) scale(1);
+  -o-transform: rotate(360deg) scale(1);
+  -ms-transform: rotate(360deg) scale(1);
+  transform: rotate(360deg) scale(1) translateY(50px);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -454,10 +461,9 @@ Mixins & Extensions
   -moz-transform: rotate(360deg) scale(1);
   -o-transform: rotate(360deg) scale(1);
   -ms-transform: rotate(360deg) scale(1);
-  transform: rotate(360deg) scale(1);
+  transform: rotate(0deg) scale(1);
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0.7;
+  filter: alpha(opacity=0.7);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -469,7 +475,8 @@ Mixins & Extensions
   -moz-transform: rotate(0deg) scale(1);
   -o-transform: rotate(0deg) scale(1);
   -ms-transform: rotate(0deg) scale(1);
-  transform: rotate(0deg) scale(1);
+  transform: scale(1.5) translateY(0px);
+  opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -477,11 +484,13 @@ Mixins & Extensions
   transition: all 0.2s ease-in-out; }
 
 .focal p {
+  color: color-light;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -o-transform: translateY(0px);
   -ms-transform: translateY(0px);
-  transform: translateY(0px);
+  transform: translateY(-100px) scale(0);
+  opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -494,8 +503,8 @@ Mixins & Extensions
   -o-transform: rotate(720deg) scale(1) translateY(210px);
   -ms-transform: rotate(720deg) scale(1) translateY(210px);
   transform: rotate(720deg) scale(1) translateY(210px);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
   opacity: 1;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -507,11 +516,13 @@ Mixins & Extensions
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
+  background: rgba(48, 27, 65, 0.25);
+  border-radius: 15px;
   -webkit-transform: translateY(0px) rotate(720deg);
   -moz-transform: translateY(0px) rotate(720deg);
   -o-transform: translateY(0px) rotate(720deg);
   -ms-transform: translateY(0px) rotate(720deg);
-  transform: translateY(0px) rotate(720deg);
+  transform: translateY(0px) rotate(360deg);
   -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
   -o-transition-delay: 0.4s;
@@ -519,24 +530,25 @@ Mixins & Extensions
   transition-delay: 0.4s; }
 
 .focal .box:hover h3 {
-  color: #603680;
+  background: #301b40;
   -webkit-transform: rotate(-180deg) scale(1) translateY(30px);
   -moz-transform: rotate(-180deg) scale(1) translateY(30px);
   -o-transform: rotate(-180deg) scale(1) translateY(30px);
   -ms-transform: rotate(-180deg) scale(1) translateY(30px);
-  transform: rotate(-180deg) scale(1) translateY(30px);
+  transform: rotate(-360deg) scale(1) translateY(-120px);
+  opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out 0.5s; }
 
 .focal .box:hover p {
-  -webkit-transform: translateY(-230px);
-  -moz-transform: translateY(-230px);
-  -o-transform: translateY(-230px);
-  -ms-transform: translateY(-230px);
-  transform: translateY(-230px);
+  -webkit-transform: translateY(-210px);
+  -moz-transform: translateY(-210px);
+  -o-transform: translateY(-210px);
+  -ms-transform: translateY(-210px);
+  transform: translateY(-210px);
   opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -545,41 +557,56 @@ Mixins & Extensions
   transition: all 0.2s ease-in-out; }
 
 @media only screen and (min-width: 960px) {
+  .focal .iconic {
+    transform: rotate(0deg) scale(2) translateY(50px); }
+
   .focal .box:hover .iconic {
-    -webkit-transform: rotate(720deg) scale(1.5) translateY(170px);
-    -moz-transform: rotate(720deg) scale(1.5) translateY(170px);
-    -o-transform: rotate(720deg) scale(1.5) translateY(170px);
-    -ms-transform: rotate(720deg) scale(1.5) translateY(1700px);
-    transform: rotate(720deg) scale(1.5) translateY(170px);
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out; }
+    -webkit-transform: scale(1.7) translateY(100px);
+    -moz-transform: scale(1.7) translateY(100px);
+    -o-transform: scale(1.7) translateY(100px);
+    -ms-transform: scale(1.7) translateY(100px);
+    transform: scale(1.7) translateY(100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.2)";
+    filter: alpha(opacity=0.2);
+    opacity: 0.2;
+    -webkit-transition: all 0.7s ease-in-out 0.3s;
+    -moz-transition: all 0.7s ease-in-out 0.3s;
+    -o-transition: all 0.7s ease-in-out 0.3s;
+    -ms-transition: all 0.7s ease-in-out 0.3s;
+    transition: all 0.7s ease-in-out 0.3s; }
 
   .focal .box:hover p {
-    -webkit-transform: translateY(-270px);
-    -moz-transform: translateY(-270px);
-    -o-transform: translateY(-270px);
-    -ms-transform: translateY(-270px);
-    transform: translateY(-270px);
-    *-webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; } }
+    color: #301b40;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px 10px;
+    margin: 15px;
+    border-radius: 15px;
+    -webkit-transform: translateY(-90px);
+    -moz-transform: translateY(-90px);
+    -o-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px) scale(1);
+    opacity: 1;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out 0.5s;
+    -moz-transition: all 0.2s ease-in-out 0.5s;
+    -o-transition: all 0.2s ease-in-out 0.5s;
+    -ms-transition: all 0.2s ease-in-out 0.5s;
+    transition: all 0.2s ease-in-out 0.5s; } }
+/********************************************
+                BUTTON STYLES
+********************************************/
 @media only screen and (min-width: 960px) {
   .wrapper {
     max-width: 1080px;
+    background: #9051bf;
     margin: 0 auto; }
 
   .col-4 {
     position: relative;
     height: 300px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-top: -20px; }
 
   .col-foot {
     position: absolute;
@@ -590,56 +617,27 @@ Mixins & Extensions
   margin: 0 auto;
   font-family: english, serif;
   text-decoration: none;
-  color: #c06cff;
-  text-shadow: 0px 0px 1px #301b41;
-  background-image: linear-gradient(to bottom, #9051bf, #301b40);
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 1px rgba(255, 255, 255, 0.6);
+  background: #301b40;
   padding: 7px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 20px;
-  box-shadow: 1px 1px 2px #301b40;
+  box-shadow: 0px 0px 10px 2px #603680;
   outline: none;
   border-style: none; }
 
 .btn:hover {
   transition-duration: 0.5s;
   color: #301b40;
-  text-shadow: 1px 1px 1px #bf6bff;
-  background-image: linear-gradient(to bottom, #c06cff, #9051bf); }
+  text-shadow: 0px 0px 0.1px #301b40;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 10px 5px #ad61e6; }
 
-/*.btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -moz-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -ms-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: -o-linear-gradient(top, $color-medium-b, $color-dark-b);
-  background-image: linear-gradient(to bottom, $color-medium-b, $color-dark-b);
-  -webkit-border-radius: 20;
-  -moz-border-radius: 20;
-  border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 3px $color-dark-b;
-  -moz-box-shadow: 3px 3px 3px $color-dark-b;
-  box-shadow: 3px 3px 3px $color-dark-b;
-  font-family: $font-secondary;
-  color: $color-light;
-  font-size: $base-font-size*1.1;
-  padding: 5px;
-    margin: 20px 30px;
-  text-decoration: none;
-    width: 50%;
-}
-
-.btn:hover {
-  background: $color-medium-a;
-  background-image: -webkit-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -moz-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -ms-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: -o-linear-gradient(top, $color-light, $color-medium-b);
-  background-image: linear-gradient(to bottom, $color-light, $color-medium-b);
-  text-decoration: none;
-}*/
-/* Sticky footer styles
--------------------------------------------------- */
+/********************************************
+            STICKY FOOTER STYLES
+********************************************/
 html {
   position: relative;
   min-height: 100%; }
@@ -658,9 +656,12 @@ body {
 @media only screen and (min-width: 960px) {
   .foot {
     max-width: 1080px; } }
+/********************************************
+            BASELINE TEXT STYLES
+********************************************/
 body {
   font: 400 1.07692em inconsolata, monospace;
-  color: #603680;
+  color: #301b40;
   text-align: center;
   background: rgba(191, 107, 255, 0.07);
   margin-top: -23px; }
@@ -672,10 +673,7 @@ body {
 .masthead {
   position: relative; }
 
-.focal .box {
-  height: 370px; }
-
-h2, h3, h4, .foot p {
+h2, h3, h4, h5, .foot p {
   font-family: english, serif;
   font-weight: 700;
   line-height: 1.3;
@@ -689,6 +687,7 @@ h3 {
   font-size: 2em; }
 
 h4 {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 0.6); }
 
 /*# sourceMappingURL=main.css.map */

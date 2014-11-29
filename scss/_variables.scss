@@ -1,5 +1,7 @@
-/* = Variables 
--------------------------------------------------------------------------------------------------------------------- */
+/********************************************
+                VARIABLES
+********************************************/
+
 /* Breakpoints */
 $breakpoint-small : 600px;
 $breakpoint-large : 960px; 
@@ -11,7 +13,8 @@ $base-font-size     :   1em;
 $base-line-height   :   1.3;
 
 /* Colors */
-$color-light    :   #c06cff;
+$color-light-a  :   hsla(0, 0%, 100%, 0.60);
+$color-light-b  :   #c06cff;
 $color-medium-a :   #ad61e6;
 $color-medium-b :   #9051bf;
 $color-dark-a   :   #603680;

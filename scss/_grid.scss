@@ -1,3 +1,7 @@
+/********************************************
+                GRID LAYOUT
+********************************************/
+
 .row {
     max-width: 960px;
     margin: 5% auto;
@@ -12,7 +16,7 @@
 
     // Col 3 Layout
 .col-3 {
-    height: 415px;
+    height: 370px;
     float: left;
     // equalSpaced( $num_of_cols, $margin, $con_width  )
     @include equalSpaced(3, 2%, 100%);
@@ -27,14 +31,14 @@
     @include equalSpaced(4, 2%, 100%);
     margin: 0 auto;
     }
-
+    
 .focal .box {
-    height: 415px;
+    height: 370px;
 }
     
 p {
     text-align: left;
-    margin-left: 3px;
+    margin-left: 15px;
     padding: 5px;
     }
   
