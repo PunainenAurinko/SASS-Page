@@ -29,3 +29,59 @@ h2, h3, h4, .foot p {
 svg {
     fill: #301b40;
 }
+
+/*.focal .iconic {
+        -webkit-transform: rotate(0deg) scale(2) translateY(50px);
+        -moz-transform: rotate(0deg) scale(2) translateY(50px);
+        -o-transform: rotate(0deg) scale(2) translateY(50px);
+        -ms-transform: rotate(0deg) scale(2) translateY(50px);
+        transform: rotate(0deg) scale(2) translateY(50px);
+    }
+    
+    .focal .box:hover .iconic {
+        -webkit-transform: scale(1.7) translateY(100px);
+        -moz-transform: scale(1.7) translateY(100px);
+        -o-transform: scale(1.7) translateY(100px);
+        -ms-transform: scale(1.7) translateY(100px);
+        transform: scale(1.7) translateY(100px) ;
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.2)";
+        filter: alpha(opacity=0.2);
+        opacity: 0.2;
+        -webkit-transition: all 0.7s ease-in-out 0.3s;
+        -moz-transition: all 0.7s ease-in-out 0.3s;
+        -o-transition: all 0.7s ease-in-out 0.3s;
+        -ms-transition: all 0.7s ease-in-out 0.3s;
+        transition: all 0.7s ease-in-out 0.3s;
+    }
+    
+    .focal .box:hover {
+        border-radius: 15px;
+        -webkit-transform: translateY(0px) rotate(0deg);
+        -moz-transform: translateY(0px) rotate(0deg);
+        -o-transform: translateY(0px) rotate(0deg);
+        -ms-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    
+    .focal .box:hover p {
+        color: $color-dark-b;
+        text-align: center;
+        padding: 20px 10px;
+        margin: 15px;
+        background: $color-light-a;
+        border-radius: 15px;
+        -webkit-transform: translateY(-90px) scale(1);
+        -moz-transform: translateY(-90px) scale(1);
+        -o-transform: translateY(-90px) scale(1);
+        -ms-transform: translateY(-90px) scale(1);
+        transform: translateY(-90px) scale(1);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+        filter: alpha(opacity=1);
+        opacity: 1;
+        -webkit-transition: all 0.2s ease-in-out 0.5s;
+        -moz-transition: all 0.2s ease-in-out 0.5s;
+        -o-transition: all 0.2s ease-in-out 0.5s;
+        -ms-transition: all 0.2s ease-in-out 0.5s;
+        transition: all 0.2s ease-in-out 0.5s;
+    }
+}*/
