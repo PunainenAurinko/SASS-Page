@@ -425,16 +425,18 @@ th {
 .iconic {
   fill: #301b40;
   stroke: #301b40; }
-  .iconic:hover {
-    fill: #ad61e6;
-    stroke: #ad61e6; }
+
+.iconic:hover {
+  fill: #ad61e6;
+  stroke: #ad61e6; }
 
 .accent .iconic-property-accent {
   fill: rgba(255, 255, 255, 0.6);
   stroke: rgba(255, 255, 255, 0.6); }
-  .accent .iconic-property-accent:hover .iconic-property-accent {
-    fill: #ad61e6;
-    stroke: #ad61e6; }
+
+.accent:hover .iconic-property-accent {
+  fill: #ad61e6;
+  stroke: #ad61e6; }
 
 /********************************************
               ANIMATION STYLES
