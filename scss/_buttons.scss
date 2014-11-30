@@ -38,12 +38,13 @@
     box-shadow: 0px 0px 10px 2px $color-dark-a;
     outline: none;
     border-style: none;
-}
 
-.btn:hover {
+
+&:hover {
     transition-duration: 0.5s;
     color: $color-dark-b;
     text-shadow: 0px 0px 0.1px $color-dark-b;
     background: hsla(0, 0%, 100%, 0.60);
     box-shadow: 0px 0px 10px 5px $color-medium-a;
+    }
 }

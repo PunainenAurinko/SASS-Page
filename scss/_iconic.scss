@@ -5,19 +5,19 @@
 .iconic {
     fill: $color-dark-b;
     stroke: $color-dark-b;
-}
 
-.iconic:hover {
+&:hover {
     fill: $color-medium-a;
     stroke: $color-medium-a;
+    }
 }
 
 .accent .iconic-property-accent {
     fill: $color-light-a;
     stroke: $color-light-a;
-}
 
-.accent:hover .iconic-property-accent {
+&:hover .iconic-property-accent {
     fill: $color-medium-a;
     stroke: $color-medium-a;
+    }
 }

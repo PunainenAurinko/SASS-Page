@@ -425,18 +425,16 @@ th {
 .iconic {
   fill: #301b40;
   stroke: #301b40; }
-
-.iconic:hover {
-  fill: #ad61e6;
-  stroke: #ad61e6; }
+  .iconic:hover {
+    fill: #ad61e6;
+    stroke: #ad61e6; }
 
 .accent .iconic-property-accent {
   fill: rgba(255, 255, 255, 0.6);
   stroke: rgba(255, 255, 255, 0.6); }
-
-.accent:hover .iconic-property-accent {
-  fill: #ad61e6;
-  stroke: #ad61e6; }
+  .accent .iconic-property-accent:hover .iconic-property-accent {
+    fill: #ad61e6;
+    stroke: #ad61e6; }
 
 /********************************************
               ANIMATION STYLES
@@ -484,7 +482,6 @@ th {
   transition: all 0.2s ease-in-out; }
 
 .focal p {
-  color: color-light;
   -webkit-transform: translateY(-100px) scale(0);
   -moz-transform: translateY(-100px) scale(0);
   -o-transform: translateY(-100px) scale(0);
@@ -603,13 +600,12 @@ th {
   box-shadow: 0px 0px 10px 2px #603680;
   outline: none;
   border-style: none; }
-
-.btn:hover {
-  transition-duration: 0.5s;
-  color: #301b40;
-  text-shadow: 0px 0px 0.1px #301b40;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 10px 5px #ad61e6; }
+  .btn:hover {
+    transition-duration: 0.5s;
+    color: #301b40;
+    text-shadow: 0px 0px 0.1px #301b40;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 10px 5px #ad61e6; }
 
 /********************************************
             STICKY FOOTER STYLES
