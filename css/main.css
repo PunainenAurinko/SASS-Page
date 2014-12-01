@@ -426,7 +426,7 @@ th {
   fill: #301b40;
   stroke: #301b40; }
 
-.iconic:hover {
+.iconic:hover, .accent:hover .iconic-property-accent {
   fill: #ad61e6;
   stroke: #ad61e6; }
 
@@ -434,115 +434,111 @@ th {
   fill: rgba(255, 255, 255, 0.6);
   stroke: rgba(255, 255, 255, 0.6); }
 
-.accent:hover .iconic-property-accent {
-  fill: #ad61e6;
-  stroke: #ad61e6; }
-
 /********************************************
               ANIMATION STYLES
 ********************************************/
 .focal .iconic {
   -webkit-transform: rotate(0deg) scale(2) translateY(50px);
   -moz-transform: rotate(0deg) scale(2) translateY(50px);
-  -o-transform: rotate(0deg) scale(2) translateY(50px);
   -ms-transform: rotate(0deg) scale(2) translateY(50px);
+  -o-transform: rotate(0deg) scale(2) translateY(50px);
   transform: rotate(0deg) scale(2) translateY(50px);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))"; }
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100"; }
 
 .focal .box {
   -webkit-transform: rotate(0deg) scale(1);
   -moz-transform: rotate(0deg) scale(1);
-  -o-transform: rotate(0deg) scale(1);
   -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
   transform: rotate(0deg) scale(1);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
 .focal h3 {
   -webkit-transform: scale(1.5) translateY(0px);
   -moz-transform: scale(1.5) translateY(0px);
-  -o-transform: scale(1.5) translateY(0px);
   -ms-transform: scale(1.5) translateY(0px);
+  -o-transform: scale(1.5) translateY(0px);
   transform: scale(1.5) translateY(0px);
   opacity: 0;
   filter: alpha(opacity=0);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0";
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 .focal p {
   -webkit-transform: translateY(-100px) scale(0);
   -moz-transform: translateY(-100px) scale(0);
-  -o-transform: translateY(-100px) scale(0);
   -ms-transform: translateY(-100px) scale(0);
+  -o-transform: translateY(-100px) scale(0);
   transform: translateY(-100px) scale(0);
   opacity: 0;
   filter: alpha(opacity=0);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0";
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 .focal .box:hover .iconic {
   -webkit-transform: scale(1.7) translateY(100px);
   -moz-transform: scale(1.7) translateY(100px);
-  -o-transform: scale(1.7) translateY(100px);
   -ms-transform: scale(1.7) translateY(100px);
+  -o-transform: scale(1.7) translateY(100px);
   transform: scale(1.7) translateY(100px);
   opacity: 0.2;
   filter: alpha(opacity=20);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=20";
   -webkit-transition: all 0.7s ease-in-out 0.3s;
   -moz-transition: all 0.7s ease-in-out 0.3s;
-  -o-transition: all 0.7s ease-in-out 0.3s;
   -ms-transition: all 0.7s ease-in-out 0.3s;
+  -o-transition: all 0.7s ease-in-out 0.3s;
   transition: all 0.7s ease-in-out 0.3s; }
 
 .focal .box:hover {
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100";
   background: rgba(48, 27, 65, 0.25);
   -webkit-transform: translateY(0px) rotate(0deg);
   -moz-transform: translateY(0px) rotate(0deg);
-  -o-transform: translateY(0px) rotate(0deg);
   -ms-transform: translateY(0px) rotate(0deg);
+  -o-transform: translateY(0px) rotate(0deg);
   transform: translateY(0px) rotate(0deg);
   -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
   transition-delay: 0.4s; }
 
 .focal .box:hover h3 {
   background: #301b40;
   -webkit-transform: rotate(-360deg) scale(1) translateY(-120px);
   -moz-transform: rotate(-360deg) scale(1) translateY(-120px);
-  -o-transform: rotate(-360deg) scale(1) translateY(-120px);
   -ms-transform: rotate(-360deg) scale(1) translateY(-120px);
+  -o-transform: rotate(-360deg) scale(1) translateY(-120px);
   transform: rotate(-360deg) scale(1) translateY(-120px);
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100";
   -webkit-transition: all 0.2s ease-in-out 0.5s;
   -moz-transition: all 0.2s ease-in-out 0.5s;
-  -o-transition: all 0.2s ease-in-out 0.5s;
   -ms-transition: all 0.2s ease-in-out 0.5s;
+  -o-transition: all 0.2s ease-in-out 0.5s;
   transition: all 0.2s ease-in-out 0.5s; }
 
 .focal .box:hover p {
@@ -554,16 +550,16 @@ th {
   border-radius: 15px;
   -webkit-transform: translateY(-90px) scale(1);
   -moz-transform: translateY(-90px) scale(1);
-  -o-transform: translateY(-90px) scale(1);
   -ms-transform: translateY(-90px) scale(1);
+  -o-transform: translateY(-90px) scale(1);
   transform: translateY(-90px) scale(1);
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100";
   -webkit-transition: all 0.2s ease-in-out 0.5s;
   -moz-transition: all 0.2s ease-in-out 0.5s;
-  -o-transition: all 0.2s ease-in-out 0.5s;
   -ms-transition: all 0.2s ease-in-out 0.5s;
+  -o-transition: all 0.2s ease-in-out 0.5s;
   transition: all 0.2s ease-in-out 0.5s; }
 
 @media only screen and (min-width: 960px) {

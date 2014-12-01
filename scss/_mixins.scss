@@ -45,8 +45,8 @@
     }
 }
 
-
-//OPACITY MIXIN
+//---------------------------------------------
+//              OPACITY MIXIN
 //---------------------------------------------
 //Setting opacity values cor current browsers and older IE
 
@@ -54,5 +54,17 @@
 @mixin opacity($opacity) {
     opacity: $opacity;
     filter: alpha(opacity=($opacity * 100));
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=" + ($opacity * 100);
  }
+
+//---------------------------------------------
+//              VENDOR PREFIX MIXIN
+//---------------------------------------------
+
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}

@@ -18,6 +18,5 @@
 }
 
 .accent:hover .iconic-property-accent {
-    fill: $color-medium-a;
-    stroke: $color-medium-a;
+    @extend .iconic:hover;
 }
