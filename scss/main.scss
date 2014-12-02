@@ -47,15 +47,11 @@ body {
     text-align: center;
 }
 
-.masthead {
-    position: relative;
-}
-
 .wrapper {
     background: $color-medium-b;
 }
 
-h2, h3, h4, h5, .foot p {
+h2, h3, h4, .foot p {
     font-family: $font-secondary;
     font-weight: 700;
     line-height: $base-line-height;
@@ -73,5 +69,9 @@ h3 {
 
 h4 {
     font-size: $base-font-size*1.4;
-    color: hsla(0, 0%, 100%, 0.60);
+    color: $color-light-a;
+}
+
+h5 {
+   color: $color-medium-b;
 }
