@@ -12,7 +12,6 @@
 .col-4 {
     position: relative;
     height: 300px;
-    margin-top: 20px;
     margin-top: -20px;
 }
 
@@ -26,25 +25,25 @@
 .btn {
     display: block;
     margin: 0 auto;
-    font-family: $font-secondary;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: $base-font-size/1.1;
     text-decoration: none;
     color: $color-light-a;
-    text-shadow: 1px $color-light-a;
     background: $color-dark-b;
-    padding: 7px;
+    //border: 2px solid $color-light-a;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px $color-dark-a;
+    border-radius: 6px;
     outline: none;
     border-style: none;
 
 
 &:hover {
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     color: $color-dark-b;
-    text-shadow: 0px 0px 0.1px $color-dark-b;
-    background: hsla(0, 0%, 100%, 0.60);
-    box-shadow: 0px 0px 10px 5px $color-medium-a;
+    background: $color-light-a;
+    //border: 2px solid $color-dark-b;
     }
 }
